@@ -32,10 +32,7 @@
           ];
           runtimeDependencies = [ (lib.getLib udev) ];
 
-          postUnpack = ''
-            echo $src
-            cp -r $src $out
-          '';
+          postUnpack = "cp -r $src $out";
 
           meta = {
             description = "The new purpose-built IDE to harness magic";
