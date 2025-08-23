@@ -10,12 +10,11 @@
       with import nixpkgs { inherit system; }; {
         packages.default = stdenv.mkDerivation (finalAttrs: {
           pname = "windsurf";
-          version = "1.98.0";
+          version = "1.99.0";
 
           src = builtins.fetchTarball {
             url =
-              "https://windsurf-stable.codeiumdata.com/linux-x64/stable/ff497a1ec3dde399fde9c001a3e69a58f2739dac/Windsurf-linux-x64-1.10.5.tar.gz";
-            sha256 = "0nzn1nnvlnkv8vzpaph21ypmi8asg17ib8ndg53ynbasc8zrgh8w";
+              "https://windsurf-stable.codeiumdata.com/linux-x64/stable/b8f002c02d165600299a109bf21d02d139c52644/Windsurf-linux-x64-1.12.2.tar.gz";
           };
 
           nativeBuildInputs = [
